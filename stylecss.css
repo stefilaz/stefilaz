@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background: #081b29;
+    color: #ededed;
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo
+{
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+.logo::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+.navbar a
+{
+    text-decoration: none;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover, .navbar a.active
+{
+    color: #00abf0;
+}
+.home
+{
+    height: 100vh;
+    background: url('me.jpg') no-repeat;
+    background-position: right;
+    background-size: 500px;
+    margin-right: 45px;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.home-content
+{
+    max-width: 600px;
+}
+.home-content h1
+{
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.home-content h1::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+.home-content h3
+{
+    position: relative;
+    font-size: 28px;
+    font-weight: 700;
+    color: #00abf0;
+}
+.home-content h3::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.3s;
+}
+.home-content p
+{
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+.home-content p::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+}
+.home-content .btn-box
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+.home-content .btn-box::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.9s;
+}
+.btn-box a
+{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.btn-box a:hover
+{
+    color: #00abf0;
+}
+.btn-box a:nth-child(2)
+{
+    background: transparent;
+    color: #00abf0;
+}
+.btn-box a:nth-child(2):hover
+{
+    color: #081b29;
+}
+.btn-box a:nth-child(2)::before
+{
+    background: #00abf0;
+}
+.btn-box a::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+.btn-box a:hover::before
+{
+    width: 100%;
+}
+.home-sci
+{
+    position: absolute;
+    left: 55px;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-sci a
+{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.home-sci a:hover
+{
+    color: #081b29;
+}
+.home-sci a::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+.home-sci a:hover::before
+{
+    width: 100%;
+
+}
+.home-imgHover
+{
+    position: absolute;
+    top: 0;
+    right: 45px;
+    width: 500px;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+}
+.home-imgHover:hover
+{
+    background: #081b29;
+    opacity: .8;
+}
+@keyframes showRight
+{
+    100%
+    {
+        width: 0;
+    }
+}
+
+.aboutme
+{
+    height: 100vh;
+    background: url('me.jpg') no-repeat;
+    background-position: right;
+    background-size: 500px;
+    margin-right: 45px;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.aboutme-content
+{
+    max-width: 700px;
+}
+.aboutme-content p
+{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.aktivnosti
+{
+    height: 100vh;
+    background: url('atletika.jpg') no-repeat;
+    background-position: right;
+    background-size: 400px 600px;
+    margin-right: 75px;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+
+.awards
+{
+    margin-right: 45px;
+    margin-top: 100px;
+    padding: 0 10%;
+}
+.awards1
+{
+    height: 100vh;
+    background: url('medali-atletika.jpg') no-repeat;
+    background-position: right;
+    background-size: 300px 400px;
+    margin-right: 105px;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.awards1-content
+{
+    max-width: 700px;
+}
+.awards1-content p
+{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+.awards2
+{
+    height: 100vh;
+    background: url('matematika.jpg') no-repeat;
+    background-position: left;
+    background-size: 300px 400px;
+    margin-left: 165px;
+    margin-top: -150px;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.awards2-content
+{
+    max-width: 700px;
+    margin-left: 350px;
+}
+.awards2-content p
+{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+.awards3
+{
+    height: 100vh;
+    background: url('narodnatehnika1.png') no-repeat;
+    background-position: right;
+    background-size: 300px 400px;
+    margin-right: 105px;
+    margin-top: -150px;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.awards3-content
+{
+    max-width: 700px;
+}
+.awards3-content p
+{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+
+.container {
+    color: #081b29;
+    max-width: 400px;
+    margin-top: 115px;
+    margin-left: 150px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+.container h2 {
+    text-align: center;
+}
+form {
+    display: grid;
+    gap: 10px;
+}
+label {
+    font-weight: bold;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #00abf0;
+    border-radius: 3px;
+}
+input[type="submit"] {
+    background-color: #081b29;
+    color: white;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #00abf0;
+}
+
